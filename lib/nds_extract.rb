@@ -24,6 +24,7 @@ def directors_totals(nds)
   while director_i < nds.length do
     #binding.pry
     result[nds[director_i][:name]] = gross_for_director(directors_database[director_i])
+    #这边就出来"director name at i position"=>totoal earning at i position,
     director_i += 1
   end
  result
